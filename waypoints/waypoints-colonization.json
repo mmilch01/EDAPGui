@@ -1,0 +1,58 @@
+{
+    "GlobalShoppingList": {
+        "BuyCommodities": {
+            "Steel": 4852,
+            "Titanium": 4656
+        },
+        "UpdateCommodityCount": true,
+        "Skip": true,
+        "Completed": false
+    },
+    "1": {
+        "SystemName": "COL 285 SECTOR SN-Y B15-6",
+        "StationName": "SCHWEICKART TOWN",
+        "GalaxyBookmarkType": "Fav",
+        "GalaxyBookmarkNumber": 7,
+        "SystemBookmarkType": "Fav",
+        "SystemBookmarkNumber": -1,
+        "SellCommodities": {},
+        "BuyCommodities": {
+            "Steel": 1057,
+            "Titanium": 4656
+        },
+        "UpdateCommodityCount": true,
+        "FleetCarrierTransfer": false,
+        "Skip": false,
+        "Completed": false
+    },
+    "2": {
+        "SystemName": "COL 285 SECTOR OH-A B15-1",
+        "StationName": "ORBITAL CONSTRUCTION SITE: CHRISTIAN VISION",
+        "GalaxyBookmarkType": "Fav",
+        "GalaxyBookmarkNumber": 3,
+        "SystemBookmarkType": "Fav",
+        "SystemBookmarkNumber": -1,
+        "SellCommodities": {
+            "ALL": 0
+        },
+        "BuyCommodities": {},
+        "FleetCarrierTransfer": false,
+        "UpdateCommodityCount": true,
+        "Skip": false,
+        "Completed": false
+    },
+    "rep": {
+        "SystemName": "REPEAT",
+        "StationName": "",
+        "GalaxyBookmarkType": "",
+        "GalaxyBookmarkNumber": -1,
+        "SystemBookmarkType": "",
+        "SystemBookmarkNumber": -1,
+        "SellCommodities": {},
+        "BuyCommodities": {},
+        "FleetCarrierTransfer": false,
+        "UpdateCommodityCount": false,
+        "Skip": false,
+        "Completed": false
+    }
+}

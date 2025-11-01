@@ -577,6 +577,70 @@ class EDWayPoint:
                             break
 
                     elif next_wp_station != "":
+                        keys=self.ap.keys
+                        sleep(2)
+                        if next_wp_station == 'OBNINSK STELLAR HHJ-34V':
+                            #special process this station.5
+                            position=4
+                            #self.ap.nav_panel.select_nav_panel()
+                            keys.send('UIFocus', state=1)
+                            sleep(0.2)
+                            keys.send('UI_Left')
+                            sleep(1)
+                            keys.send('UI_Up', hold=4)
+                            for i in range(0,position):
+                                keys.send('UI_Down')
+                                sleep(0.2)
+                            keys.send('UI_Select')
+                            sleep(1)
+                            keys.send('UI_Select')
+                            sleep(1)
+                            keys.send('UIFocus', state=1)
+                            sleep(0.2)
+                            keys.send('UIFocus', state=0)
+                            sleep(1)
+                        elif next_wp_station == 'ORBITAL CONSTRUCTION SITE: ACKER TOWN':
+                            #special process this also.  
+                            position=3
+                            #self.ap.nav_panel.select_nav_panel()
+                            keys.send('UIFocus', state=1)
+                            sleep(0.2)
+                            keys.send('UI_Left')
+                            sleep(1)
+                            keys.send('UI_Up', hold=4)
+                            for i in range(0,position):
+                                keys.send('UI_Down')
+                                sleep(0.2)
+                            keys.send('UI_Select')
+                            sleep(1)
+                            keys.send('UI_Select')
+                            sleep(1)
+                            keys.send('UIFocus', state=1)
+                            sleep(0.2)
+                            keys.send('UIFocus', state=0)
+                            sleep(1)
+                        
+                        elif next_wp_station == 'TRAILBLAZER WISH':
+                            #special process this also.  
+                            position=3
+                            #self.ap.nav_panel.select_nav_panel()
+                            keys.send('UIFocus', state=1)
+                            sleep(0.2)
+                            keys.send('UI_Left')
+                            sleep(1)
+                            keys.send('UI_Up', hold=4)
+                            for i in range(0,position):
+                                keys.send('UI_Down')
+                                sleep(0.2)
+                            keys.send('UI_Select')
+                            sleep(1)
+                            keys.send('UI_Select')
+                            sleep(1)
+                            keys.send('UIFocus', state=1)
+                            sleep(0.2)
+                            keys.send('UIFocus', state=0)
+                            sleep(1)
+                        else:
                         # Need OCR added in for this (WIP)
                         need_ocr = True
                         self.ap.ap_ckb('log+vce', f"No bookmark defined. Target by Station text not supported.")

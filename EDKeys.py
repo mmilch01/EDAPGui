@@ -41,6 +41,7 @@ class EDKeys:
             'PitchDownButton',
             'SetSpeedZero',
             'SetSpeed50',
+            'SetSpeed75',
             'SetSpeed100',
             'HyperSuperCombination',
             'SelectTarget',

@@ -2092,9 +2092,11 @@ class EDAutopilot:
 
         # Ensure we are 50%, don't want the loop of shame
         # Align Nav to target
+        #self.keys.send('SetSpeed75')
         self.keys.send('SetSpeed50')
         self.nav_align(scr_reg)  # Compass Align
-        self.keys.send('SetSpeed50')
+        self.keys.send('SetSpeed75')
+        #self.keys.send('SetSpeed50')
 
         self.jn.ship_state()['interdicted'] = False
 
@@ -2113,6 +2115,7 @@ class EDAutopilot:
                     self.nav_align(scr_reg)  # Compass Align
 
                 elif align_res == ScTargetAlignReturn.Found:
+                    self.keys.send('SetSpeed75')
                     pass
 
                 elif align_res == ScTargetAlignReturn.Disengage:
@@ -2133,7 +2136,8 @@ class EDAutopilot:
             interdicted = self.interdiction_check()
             if interdicted:
                 # Continue journey after interdiction
-                self.keys.send('SetSpeed50')
+                #self.keys.send('SetSpeed50')
+                self.keys.send('SetSpeed75')
                 self.nav_align(scr_reg)  # realign with station
 
             # check for SC Disengage

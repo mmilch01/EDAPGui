@@ -1,0 +1,70 @@
+{
+    "GlobalShoppingList": {
+        "BuyCommodities": {},
+        "UpdateCommodityCount": true,
+        "Skip": true,
+        "Completed": false
+    },
+    "1": {
+        "SystemName": "BLETII",
+        "StationName": "TRAILBLAZER WISH",
+        "GalaxyBookmarkType": "Nav",
+        "GalaxyBookmarkNumber": -1,
+        "SystemBookmarkType": "Nav",
+        "SystemBookmarkNumber": -1,
+        "SellCommodities": {},
+        "BuyCommodities": {
+            "CMM Composite": 20000
+        },
+        "UpdateCommodityCount": true,
+        "FleetCarrierTransfer": false,
+        "Skip": true,
+        "Completed": false
+    },
+    "2": {
+        "SystemName": "COL 285 SECTOR OH-A B15-1",
+        "StationName": "OBNINSK STELLAR HHJ-34V",
+        "GalaxyBookmarkType": "Nav",
+        "GalaxyBookmarkNumber": -1,
+        "SystemBookmarkType": "Nav",
+        "SystemBookmarkNumber": -1,
+        "SellCommodities": {},
+        "BuyCommodities": {
+            "CMM Composite": 4290
+        },
+        "FleetCarrierTransfer": false,
+        "UpdateCommodityCount": true,
+        "Skip": false,
+        "Completed": true
+    },
+    "3": {
+        "SystemName": "COL 285 SECTOR OH-A B15-1",
+        "StationName": "ORBITAL CONSTRUCTION SITE: ACKER TOWN",
+        "GalaxyBookmarkType": "Nav",
+        "GalaxyBookmarkNumber": -1,
+        "SystemBookmarkType": "Nav",
+        "SystemBookmarkNumber": -1,
+        "SellCommodities": {
+            "ALL": 0
+        },
+        "BuyCommodities": {},
+        "FleetCarrierTransfer": false,
+        "UpdateCommodityCount": true,
+        "Skip": false,
+        "Completed": false
+    },
+    "rep": {
+        "SystemName": "REPEAT",
+        "StationName": "",
+        "GalaxyBookmarkType": "",
+        "GalaxyBookmarkNumber": -1,
+        "SystemBookmarkType": "",
+        "SystemBookmarkNumber": -1,
+        "SellCommodities": {},
+        "BuyCommodities": {},
+        "FleetCarrierTransfer": false,
+        "UpdateCommodityCount": false,
+        "Skip": false,
+        "Completed": false
+    }
+}
