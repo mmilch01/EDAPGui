@@ -8,6 +8,7 @@ import json
 from MarketParser import MarketParser
 from MousePt import MousePoint
 from pathlib import Path
+from directinput import *
 
 """
 File: EDWayPoint.py    
@@ -441,10 +442,14 @@ class EDWayPoint:
         sleep(1)
         keys.send('UI_Select')
         sleep(1)
-        keys.send('UIFocus', state=1)
+
+        PressKey(SCANCODE['Key_Escape'])
         sleep(0.2)
-        keys.send('UIFocus', state=0)
-        sleep(1)
+
+        #keys.send('UIFocus', hold=1, state=1)
+        #sleep(0.2)
+        #keys.send('UIFocus', state=0)
+        #sleep(1)
 
     def waypoint_assist(self, keys, scr_reg):
         """ Processes the waypoints, performing jumps and sc assist if going to a station

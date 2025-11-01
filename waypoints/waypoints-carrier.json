@@ -1,9 +1,35 @@
 {
     "GlobalShoppingList": {
-        "BuyCommodities": {},
+        "BuyCommodities": {
+            "Steel": 43337,
+            "Aluminium": 39046,
+            "Computer components": 302,
+            "Copper": 2579,
+            "Food cartridges": 507,
+            "Fruit and vegetables": 294,
+            "Insulating membrane": 1347,
+            "Liquid oxygen": 14840,
+            "Polymers": 2041,
+            "Titanium": 32406,
+            "Water": 6361
+        },
         "UpdateCommodityCount": true,
         "Skip": true,
         "Completed": false
+    },
+    "0": {
+        "SystemName": "COL 285 SECTOR SN-Y B15-6",
+        "StationName": "SCHWEICKART TOWN",
+        "GalaxyBookmarkType": "Fav",
+        "GalaxyBookmarkNumber": 7,
+        "SystemBookmarkType": "Fav",
+        "SystemBookmarkNumber": -1,
+        "SellCommodities": {},
+        "BuyCommodities": {},
+        "UpdateCommodityCount": true,
+        "FleetCarrierTransfer": false,
+        "Skip": false,
+        "Completed": true
     },
     "1": {
         "SystemName": "BLETII",
@@ -14,38 +40,36 @@
         "SystemBookmarkNumber": -1,
         "PositionInNavPanel": 3,
         "SellCommodities": {},
-        "BuyCommodities": {
-            "CMM Composite": 20000
-        },
+        "BuyCommodities": {},
         "UpdateCommodityCount": true,
         "FleetCarrierTransfer": false,
         "Skip": true,
         "Completed": false
     },
     "2": {
-        "SystemName": "COL 285 SECTOR OH-A B15-1",
+        "SystemName": "COL 285 SECTOR SN-Y B15-6",
         "StationName": "OBNINSK STELLAR HHJ-34V",
         "GalaxyBookmarkType": "Nav",
         "GalaxyBookmarkNumber": -1,
         "SystemBookmarkType": "Nav",
         "SystemBookmarkNumber": -1,
-        "PositionInNavPanel": 4,
-        "SellCommodities": {},
-        "BuyCommodities": {
-            "CMM Composite": 4290
+        "PositionInNavPanel": 1,
+        "SellCommodities": {
+            "ALL": 0
         },
-        "FleetCarrierTransfer": false,
+        "BuyCommodities": {},
+        "FleetCarrierTransfer": true,
         "UpdateCommodityCount": true,
         "Skip": false,
-        "Completed": true
+        "Completed": false
     },
     "3": {
         "SystemName": "COL 285 SECTOR OH-A B15-1",
         "StationName": "ORBITAL CONSTRUCTION SITE: ACKER TOWN",
-        "GalaxyBookmarkType": "Nav",
-        "GalaxyBookmarkNumber": -1,
-        "SystemBookmarkType": "Nav",
-        "SystemBookmarkNumber": -1,
+        "GalaxyBookmarkType": "Fav",
+        "GalaxyBookmarkNumber": 3,
+        "SystemBookmarkType": "Fav",
+        "SystemBookmarkNumber": 3,
         "PositionInNavPanel": 3,
         "SellCommodities": {
             "ALL": 0
@@ -53,7 +77,7 @@
         "BuyCommodities": {},
         "FleetCarrierTransfer": false,
         "UpdateCommodityCount": true,
-        "Skip": false,
+        "Skip": true,
         "Completed": false
     },
     "rep": {

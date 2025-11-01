@@ -6,6 +6,7 @@ from StatusParser import StatusParser
 from time import sleep
 from EDlogger import logger
 from pyautogui import typewrite
+from directinput import SCANCODE
 
 
 class EDGalaxyMap:
@@ -129,22 +130,31 @@ class EDGalaxyMap:
         logger.debug(f"Entered system name: {target_name_uc}.")
         sleep(0.05)
 
+        
+        keys=ap.keys
+        keys.click_key(SCANCODE['Key_DownArrow'])
+        sleep(0.2)
+        keys.click_key(SCANCODE['Key_Space'])
+        sleep(3)
+        keys.click_key(SCANCODE['Key_E'])
+        sleep(0.05)
+
         # send enter key (removes focus out of input field)
-        ap.keys.send_key('Down', 28)  # 28=ENTER
-        sleep(0.05)
-        ap.keys.send_key('Up', 28)  # 28=ENTER
-        sleep(0.05)
+        #ap.keys.send_key('Down', 28)  # 28=ENTER
+        #sleep(0.05)
+        #ap.keys.send_key('Up', 28)  # 28=ENTER
+        #sleep(0.05)
 
         # According to some reports, the ENTER key does not always reselect the text
         # box, so this down and up will reselect the text box.
-        ap.keys.send('UI_Down')
-        sleep(0.05)
-        ap.keys.send('UI_Up')
-        sleep(0.05)
+        #ap.keys.send('UI_Down')
+        #sleep(0.05)
+        #ap.keys.send('UI_Up')
+        #sleep(0.05)
 
         # navigate to and select: search button
-        ap.keys.send('UI_Right')  # to >| button
-        sleep(0.05)
+        #ap.keys.send('UI_Right')  # to >| button
+        #sleep(0.05)
 
         correct_route = False
         while not correct_route:
