@@ -12,6 +12,7 @@
         "GalaxyBookmarkNumber": -1,
         "SystemBookmarkType": "Nav",
         "SystemBookmarkNumber": -1,
+        "PositionInNavPanel": 3,
         "SellCommodities": {},
         "BuyCommodities": {
             "CMM Composite": 20000
@@ -28,6 +29,7 @@
         "GalaxyBookmarkNumber": -1,
         "SystemBookmarkType": "Nav",
         "SystemBookmarkNumber": -1,
+        "PositionInNavPanel": 4,
         "SellCommodities": {},
         "BuyCommodities": {
             "CMM Composite": 4290
@@ -44,6 +46,7 @@
         "GalaxyBookmarkNumber": -1,
         "SystemBookmarkType": "Nav",
         "SystemBookmarkNumber": -1,
+        "PositionInNavPanel": 3,
         "SellCommodities": {
             "ALL": 0
         },

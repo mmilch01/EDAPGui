@@ -425,6 +425,27 @@ class EDWayPoint:
 
         sleep(2)  # give time to popdown menu
 
+    def waypont_select_nav_panel(self,position):
+        keys=self.ap.keys
+        sleep(2)
+        #self.ap.nav_panel.select_nav_panel()
+        keys.send('UIFocus', state=1)
+        sleep(0.2)
+        keys.send('UI_Left')
+        sleep(1)
+        keys.send('UI_Up', hold=4)
+        for i in range(0,position):
+            keys.send('UI_Down')
+            sleep(0.2)
+        keys.send('UI_Select')
+        sleep(1)
+        keys.send('UI_Select')
+        sleep(1)
+        keys.send('UIFocus', state=1)
+        sleep(0.2)
+        keys.send('UIFocus', state=0)
+        sleep(1)
+
     def waypoint_assist(self, keys, scr_reg):
         """ Processes the waypoints, performing jumps and sc assist if going to a station
         also can then perform trades if specific in the waypoints file.
@@ -475,6 +496,7 @@ class EDWayPoint:
             gal_bookmark_num = next_waypoint.get('GalaxyBookmarkNumber', 0)
             sys_bookmark_type = next_waypoint.get('SystemBookmarkType', '')
             sys_bookmark_num = next_waypoint.get('SystemBookmarkNumber', 0)
+            nav_panel_position = next_waypoint.get('PositionInNavPanel',-1)
 
             next_wp_system = next_waypoint.get('SystemName', '').upper()
             next_wp_station = next_waypoint.get('StationName', '').upper()
@@ -577,76 +599,16 @@ class EDWayPoint:
                             break
 
                     elif next_wp_station != "":
-                        keys=self.ap.keys
-                        sleep(2)
-                        if next_wp_station == 'OBNINSK STELLAR HHJ-34V':
-                            #special process this station.5
-                            position=4
-                            #self.ap.nav_panel.select_nav_panel()
-                            keys.send('UIFocus', state=1)
-                            sleep(0.2)
-                            keys.send('UI_Left')
-                            sleep(1)
-                            keys.send('UI_Up', hold=4)
-                            for i in range(0,position):
-                                keys.send('UI_Down')
-                                sleep(0.2)
-                            keys.send('UI_Select')
-                            sleep(1)
-                            keys.send('UI_Select')
-                            sleep(1)
-                            keys.send('UIFocus', state=1)
-                            sleep(0.2)
-                            keys.send('UIFocus', state=0)
-                            sleep(1)
-                        elif next_wp_station == 'ORBITAL CONSTRUCTION SITE: ACKER TOWN':
-                            #special process this also.  
-                            position=3
-                            #self.ap.nav_panel.select_nav_panel()
-                            keys.send('UIFocus', state=1)
-                            sleep(0.2)
-                            keys.send('UI_Left')
-                            sleep(1)
-                            keys.send('UI_Up', hold=4)
-                            for i in range(0,position):
-                                keys.send('UI_Down')
-                                sleep(0.2)
-                            keys.send('UI_Select')
-                            sleep(1)
-                            keys.send('UI_Select')
-                            sleep(1)
-                            keys.send('UIFocus', state=1)
-                            sleep(0.2)
-                            keys.send('UIFocus', state=0)
-                            sleep(1)
-                        
-                        elif next_wp_station == 'TRAILBLAZER WISH':
-                            #special process this also.  
-                            position=3
-                            #self.ap.nav_panel.select_nav_panel()
-                            keys.send('UIFocus', state=1)
-                            sleep(0.2)
-                            keys.send('UI_Left')
-                            sleep(1)
-                            keys.send('UI_Up', hold=4)
-                            for i in range(0,position):
-                                keys.send('UI_Down')
-                                sleep(0.2)
-                            keys.send('UI_Select')
-                            sleep(1)
-                            keys.send('UI_Select')
-                            sleep(1)
-                            keys.send('UIFocus', state=1)
-                            sleep(0.2)
-                            keys.send('UIFocus', state=0)
-                            sleep(1)
-                        else:
+                        if nav_panel_position<0: 
+                            _abort = True
+                            break
+                        self.waypont_select_nav_panel(nav_panel_position)
                         # Need OCR added in for this (WIP)
-                        need_ocr = True
-                        self.ap.ap_ckb('log+vce', f"No bookmark defined. Target by Station text not supported.")
+                        #need_ocr = True
+                        #self.ap.ap_ckb('log+vce', f"No bookmark defined. Target by Station text not supported.")
                         # res = self.nav_panel.lock_destination(station_name)
-                        _abort = True
-                        break
+                        #_abort = True
+                        # break
 
                     # Jump to the station by name
                     res = self.ap.supercruise_to_station(scr_reg, next_wp_station)
