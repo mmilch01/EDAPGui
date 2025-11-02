@@ -502,6 +502,7 @@ class EDWayPoint:
             sys_bookmark_type = next_waypoint.get('SystemBookmarkType', '')
             sys_bookmark_num = next_waypoint.get('SystemBookmarkNumber', 0)
             nav_panel_position = next_waypoint.get('PositionInNavPanel',-1)
+            sco_time = next_waypoint.get('SCOTime',0)
 
             next_wp_system = next_waypoint.get('SystemName', '').upper()
             next_wp_station = next_waypoint.get('StationName', '').upper()
@@ -616,7 +617,8 @@ class EDWayPoint:
                         # break
 
                     # Jump to the station by name
-                    res = self.ap.supercruise_to_station(scr_reg, next_wp_station)
+                    res = self.ap.supercruise_to_station(scr_reg, next_wp_station, sco_time=sco_time)
+                    sco_time=0
                     sleep(1)  # Allow status log to update
                     continue
                 else:

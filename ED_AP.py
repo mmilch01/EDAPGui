@@ -32,6 +32,7 @@ from StatusParser import StatusParser
 from Voice import *
 from Robigo import *
 from TCE_Integration import TceIntegration
+from directinput import SCANCODE
 
 """
 File:EDAP.py    EDAutopilot
@@ -1956,7 +1957,7 @@ class EDAutopilot:
 
         return True
 
-    def supercruise_to_station(self, scr_reg, station_name: str) -> bool:
+    def supercruise_to_station(self, scr_reg, station_name: str,sco_time=0) -> bool:
         """ Supercruise to the specified target, which may be a station, FC, body, signal source, etc.
         Returns True if we travel successfully travel there, else False. """
         # If waypoint file has a Station Name associated then attempt targeting it
@@ -1978,7 +1979,8 @@ class EDAutopilot:
         if self.have_destination(scr_reg):
             self.ap_ckb('log', " - Station: " + station_name)
             self.update_ap_status(f"SC to Station: {station_name}")
-            self.sc_assist(scr_reg)
+            self.sc_assist(scr_reg,do_docking=True,sco_time=sco_time)
+            sco_time=0
         else:
             self.ap_ckb('log', f" - Could not target station: {station_name}")
             return False
@@ -2068,9 +2070,8 @@ class EDAutopilot:
 
     # Supercruise Assist loop to travel to target in system and perform autodock
     #
-    def sc_assist(self, scr_reg, do_docking=True):
+    def sc_assist(self, scr_reg, do_docking=True,sco_time=0):
         logger.debug("Entered sc_assist")
-
         # Goto cockpit view
         self.ship_control.goto_cockpit_view()
 
@@ -2116,6 +2117,11 @@ class EDAutopilot:
 
                 elif align_res == ScTargetAlignReturn.Found:
                     self.keys.send('SetSpeed75')
+                    if sco_time>0.05: #run once
+                        self.keys.click_key(SCANCODE['Key_Tab'])
+                        sleep(sco_time-0.05)
+                        self.keys.click_key(SCANCODE['Key_Tab'])
+                        sco_time=0
                     pass
 
                 elif align_res == ScTargetAlignReturn.Disengage:
