@@ -1,7 +1,7 @@
 {
     "GlobalShoppingList": {
         "BuyCommodities": {
-            "Steel": 43337,
+            "Steel": 29422,
             "Aluminium": 39046,
             "Computer components": 302,
             "Copper": 2579,
@@ -21,7 +21,7 @@
         "SystemName": "COL 285 SECTOR SN-Y B15-6",
         "StationName": "SCHWEICKART TOWN",
         "GalaxyBookmarkType": "Fav",
-        "GalaxyBookmarkNumber": 7,
+        "GalaxyBookmarkNumber": 8,
         "SystemBookmarkType": "Fav",
         "SystemBookmarkNumber": -1,
         "SellCommodities": {},
@@ -29,7 +29,7 @@
         "UpdateCommodityCount": true,
         "FleetCarrierTransfer": false,
         "Skip": false,
-        "Completed": true
+        "Completed": false
     },
     "1": {
         "SystemName": "BLETII",
@@ -49,9 +49,9 @@
     "2": {
         "SystemName": "COL 285 SECTOR SN-Y B15-6",
         "StationName": "OBNINSK STELLAR HHJ-34V",
-        "GalaxyBookmarkType": "Nav",
-        "GalaxyBookmarkNumber": -1,
-        "SystemBookmarkType": "Nav",
+        "GalaxyBookmarkType": "Fav",
+        "GalaxyBookmarkNumber": 1,
+        "SystemBookmarkType": "Fav",
         "SystemBookmarkNumber": -1,
         "PositionInNavPanel": 1,
         "SellCommodities": {
