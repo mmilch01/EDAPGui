@@ -274,10 +274,10 @@ class EDKeys:
         else:
             PressKey(key)
 
-    def click_key(self,key):
-        self.send_key('Down',key)
+    def click_key(self,key_name):
+        self.send_key('Down',SCANCODE[key_name])
         sleep(0.05)
-        self.send_key('Up',key)
+        self.send_key('Up',SCANCODE[key_name])
 
     def send(self, key_binding, hold=None, repeat=1, repeat_delay=None, state=None):
         key = self.keys.get(key_binding)

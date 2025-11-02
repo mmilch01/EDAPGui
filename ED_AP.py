@@ -2118,9 +2118,9 @@ class EDAutopilot:
                 elif align_res == ScTargetAlignReturn.Found:
                     self.keys.send('SetSpeed75')
                     if sco_time>0.05: #run once
-                        self.keys.click_key(SCANCODE['Key_Tab'])
+                        self.keys.click_key('Key_Tab')
                         sleep(sco_time-0.05)
-                        self.keys.click_key(SCANCODE['Key_Tab'])
+                        self.keys.click_key('Key_Tab')
                         sco_time=0
                     pass
 

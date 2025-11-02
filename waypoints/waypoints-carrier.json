@@ -1,7 +1,7 @@
 {
     "GlobalShoppingList": {
         "BuyCommodities": {
-            "Steel": 21832,
+            "Steel": 2857,
             "Aluminium": 39046,
             "Computer components": 302,
             "Copper": 2579,
@@ -13,7 +13,7 @@
             "Titanium": 32406,
             "Water": 6361
         },
-        "UpdateCommodityCount": true,
+        "UpdateCommodityCount": false,
         "Skip": true,
         "Completed": false
     },
@@ -29,7 +29,7 @@
         "UpdateCommodityCount": true,
         "FleetCarrierTransfer": false,
         "SCOTime": 0,
-        "Skip": false,
+        "Skip": true,
         "Completed": false
     },
     "1": {
@@ -49,22 +49,22 @@
         "Completed": false
     },
     "2": {
-        "SystemName": "COL 285 SECTOR SN-Y B15-6",
+        "SystemName": "COL 285 SECTOR OH-A B15-1",
         "StationName": "OBNINSK STELLAR HHJ-34V",
         "GalaxyBookmarkType": "Fav",
         "GalaxyBookmarkNumber": 1,
         "SystemBookmarkType": "Fav",
-        "SystemBookmarkNumber": -1,
+        "SystemBookmarkNumber": 1,
         "PositionInNavPanel": 1,
-        "SellCommodities": {
-            "Steel": 21070
+        "SellCommodities": {},
+        "BuyCommodities": {
+            "Steel": 12145
         },
-        "BuyCommodities": {},
-        "FleetCarrierTransfer": true,
+        "FleetCarrierTransfer": false,
         "UpdateCommodityCount": true,
         "SCOTime": 0,
         "Skip": false,
-        "Completed": false
+        "Completed": true
     },
     "3": {
         "SystemName": "COL 285 SECTOR OH-A B15-1",
@@ -81,7 +81,7 @@
         "FleetCarrierTransfer": false,
         "UpdateCommodityCount": true,
         "SCOTime": 0,
-        "Skip": true,
+        "Skip": false,
         "Completed": false
     },
     "rep": {

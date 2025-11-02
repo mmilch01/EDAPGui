@@ -95,7 +95,8 @@ class Screen_Regions:
         self.navpoint_match_thresh = 0.8
         #self.target_thresh = 0.54
         self.target_thresh = 0.2
-        self.target_occluded_thresh = 0.55
+        #self.target_occluded_thresh = 0.55
+        self.target_occluded_thresh = 0.35
         self.sun_threshold = 125
         self.disengage_thresh = 0.25
 

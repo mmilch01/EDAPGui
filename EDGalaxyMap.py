@@ -132,11 +132,11 @@ class EDGalaxyMap:
 
         
         keys=ap.keys
-        keys.click_key(SCANCODE['Key_DownArrow'])
+        keys.click_key('Key_DownArrow')
         sleep(0.2)
-        keys.click_key(SCANCODE['Key_Space'])
+        keys.click_key('Key_Space')
         sleep(3)
-        keys.click_key(SCANCODE['Key_E'])
+        keys.click_key('Key_E')
         sleep(0.05)
 
         # send enter key (removes focus out of input field)

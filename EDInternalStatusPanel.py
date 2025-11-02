@@ -56,9 +56,10 @@ class EDInternalStatusPanel:
             self.ap.ship_control.goto_cockpit_view()
 
             self.keys.send("HeadLookReset")
-            self.keys.send('UIFocus', state=1)
-            self.keys.send('UI_Right')
-            self.keys.send('UIFocus', state=0)
+            self.keys.click_key("Key_4")
+            #self.keys.send('UIFocus', state=1)
+            #self.keys.send('UI_Right')
+            #self.keys.send('UIFocus', state=0)
             sleep(0.5)
 
             # Check if it opened
