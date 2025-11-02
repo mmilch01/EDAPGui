@@ -1,7 +1,7 @@
 {
     "GlobalShoppingList": {
         "BuyCommodities": {
-            "Steel": 24362,
+            "Steel": 21832,
             "Aluminium": 39046,
             "Computer components": 302,
             "Copper": 2579,
@@ -30,7 +30,7 @@
         "FleetCarrierTransfer": false,
         "SCOTime": 0,
         "Skip": false,
-        "Completed": true
+        "Completed": false
     },
     "1": {
         "SystemName": "BLETII",
@@ -57,12 +57,12 @@
         "SystemBookmarkNumber": -1,
         "PositionInNavPanel": 1,
         "SellCommodities": {
-            "ALL": 0
+            "Steel": 21070
         },
         "BuyCommodities": {},
         "FleetCarrierTransfer": true,
         "UpdateCommodityCount": true,
-        "SCOTime": 3.0,
+        "SCOTime": 0,
         "Skip": false,
         "Completed": false
     },
@@ -70,9 +70,9 @@
         "SystemName": "COL 285 SECTOR OH-A B15-1",
         "StationName": "ORBITAL CONSTRUCTION SITE: ACKER TOWN",
         "GalaxyBookmarkType": "Fav",
-        "GalaxyBookmarkNumber": 3,
+        "GalaxyBookmarkNumber": 4,
         "SystemBookmarkType": "Fav",
-        "SystemBookmarkNumber": 3,
+        "SystemBookmarkNumber": 4,
         "PositionInNavPanel": 3,
         "SellCommodities": {
             "ALL": 0
