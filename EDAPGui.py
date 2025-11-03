@@ -220,6 +220,7 @@ class APGui():
         self.gui_loaded = True
         # Send a log entry which will flush out the buffer.
         self.callback('log', 'ED Autopilot loaded successfully.')
+        self.open_wp_file(self.ed_ap.config['LastWaypointFile'])
 
     # callback from the EDAP, to configure GUI items
     def callback(self, msg, body=None):
@@ -490,12 +491,16 @@ class APGui():
     def ship_tst_yaw(self):
         self.ed_ap.ship_tst_yaw()
 
-    def open_wp_file(self):
+    def open_wp_file(self,file=None):
         filetypes = (
             ('json files', '*.json'),
             ('All files', '*.*')
         )
-        filename = fd.askopenfilename(title="Waypoint File", initialdir='./waypoints/', filetypes=filetypes)
+        if file is not None:
+            filename = file
+        else:
+            filename = fd.askopenfilename(title="Waypoint File", initialdir='./waypoints/', filetypes=filetypes)
+
         if filename != "":
             res = self.ed_ap.waypoint.load_waypoint_file(filename)
             if res:

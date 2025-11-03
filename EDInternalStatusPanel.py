@@ -80,6 +80,8 @@ class EDInternalStatusPanel:
 
         # Show nav panel
         active, active_tab_name = self.show_right_panel()
+        print(f"Internal Panel active: {active}, tab: {active_tab_name}")
+        sleep(1) #DEBUG
         if active is None:
             return None
         if not active:
@@ -90,6 +92,7 @@ class EDInternalStatusPanel:
             return True
         elif active_tab_name is self.modules_tab_text:
             self.keys.send('CycleNextPanel', repeat=3)
+            sleep(1) #DEBUG
             return True
         elif active_tab_name is self.fire_groups_tab_text:
             self.keys.send('CycleNextPanel', repeat=2)
@@ -204,12 +207,15 @@ class EDInternalStatusPanel:
         # Assumes on the INVENTORY tab
         ap.keys.send('UI_Right')
         sleep(0.1)
+        sleep(1)
         ap.keys.send('UI_Up')  # To FILTERS
         sleep(0.1)
+        sleep(1)
         ap.keys.send('UI_Right')  # To TRANSFER >>
         sleep(0.1)
+        sleep(1) 
         ap.keys.send('UI_Select')  # Click TRANSFER >>
-        sleep(0.1)
+        sleep(08.1)
         ap.keys.send('UI_Up', hold=3)
         sleep(0.1)
         ap.keys.send('UI_Up')
@@ -231,16 +237,19 @@ class EDInternalStatusPanel:
         logger.debug("transfer_to_fleetcarrier: entered")
         # Go to the internal (right) panel inventory tab
         self.show_inventory_tab()
-
+        sleep(5) #DEBUG
+        sleep(0.5)
         # Assumes on the INVENTORY tab
         ap.keys.send('UI_Right')
+        sleep(0.5)
+        ap.keys.send('UI_Up')  # To FILTERS. This for some reason does not always work
         sleep(0.1)
-        ap.keys.send('UI_Up')  # To FILTERS
-        sleep(0.1)
+        ap.keys.click_key('Key_UpArrow') # Just another way to ensure we are on FILTERS
+        sleep(0.5)
         ap.keys.send('UI_Right')  # To >> TRANSFER
         sleep(0.1)
         ap.keys.send('UI_Select')  # Click >> TRANSFER
-        sleep(0.1)
+        sleep(1.0)
         ap.keys.send('UI_Up', hold=3)  # go to top of list
         sleep(0.1)
 
