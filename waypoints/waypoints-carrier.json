@@ -28,24 +28,24 @@
         "UpdateCommodityCount": true,
         "FleetCarrierTransfer": false,
         "SCOTime": 0,
-        "Skip": false,
+        "Skip": true,
         "Completed": false
     },
     "2": {
-        "SystemName": "COL 285 SECTOR SN-Y B15-6",
+        "SystemName": "COL 285 SECTOR OH-A B15-1",
         "StationName": "OBNINSK STELLAR HHJ-34V",
         "GalaxyBookmarkType": "Fav",
         "GalaxyBookmarkNumber": 1,
         "SystemBookmarkType": "Fav",
         "SystemBookmarkNumber": 1,
         "PositionInNavPanel": 1,
-        "BuyCommodities": {},
-        "SellCommodities": {
+        "BuyCommodities": {
             "ALL": 0
         },
+        "SellCommodities": {},
         "FleetCarrierTransfer": false,
         "UpdateCommodityCount": false,
-        "SCOTime": 4.5,
+        "SCOTime": 0,
         "Skip": false,
         "Completed": false
     },
@@ -80,7 +80,7 @@
         "FleetCarrierTransfer": false,
         "UpdateCommodityCount": false,
         "SCOTime": 0,
-        "Skip": true,
+        "Skip": false,
         "Completed": false
     },
     "rep": {
