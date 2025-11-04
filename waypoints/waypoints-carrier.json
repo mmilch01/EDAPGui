@@ -29,7 +29,7 @@
         "FleetCarrierTransfer": false,
         "SCOTime": 0,
         "Skip": false,
-        "Completed": true
+        "Completed": false
     },
     "2": {
         "SystemName": "COL 285 SECTOR SN-Y B15-6",
@@ -43,7 +43,7 @@
         "SellCommodities": {
             "ALL": 0
         },
-        "FleetCarrierTransfer": true,
+        "FleetCarrierTransfer": false,
         "UpdateCommodityCount": false,
         "SCOTime": 4.5,
         "Skip": false,
