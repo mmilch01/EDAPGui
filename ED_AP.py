@@ -1671,27 +1671,33 @@ class EDAutopilot:
 
     #
     def rotateLeft(self, deg):
-        htime = deg/self.rollrate
+        adj_coeff=1 if self.jn.ship_state()['status'] == 'in_supercruise' else 0.5
+        htime = adj_coeff*deg/self.rollrate
         self.keys.send('RollLeftButton', hold=htime)
 
     def rotateRight(self, deg):
-        htime = deg/self.rollrate
+        adj_coeff=1.0 if self.jn.ship_state()['status'] == 'in_supercruise' else 0.5
+        htime = adj_coeff*deg/self.rollrate
         self.keys.send('RollRightButton', hold=htime)
 
     def pitchDown(self, deg):
-        htime = deg/self.pitchrate
+        adj_coeff=1.0 if self.jn.ship_state()['status'] == 'in_supercruise' else 0.5
+        htime = adj_coeff*deg/self.pitchrate
         self.keys.send('PitchDownButton', htime)
 
     def pitchUp(self, deg):
-        htime = deg/self.pitchrate
+        adj_coeff=1.0 if self.jn.ship_state()['status'] == 'in_supercruise' else 0.5
+        htime = adj_coeff*deg/self.pitchrate
         self.keys.send('PitchUpButton', htime)
 
     def yawLeft(self, deg):
-        htime = deg/self.yawrate
+        adj_coeff=1.0 if self.jn.ship_state()['status'] == 'in_supercruise' else 0.5
+        htime = adj_coeff*deg/self.yawrate
         self.keys.send('YawLeftButton', hold=htime)
 
     def yawRight(self, deg):
-        htime = deg / self.yawrate
+        adj_coeff=1.0 if self.jn.ship_state()['status'] == 'in_supercruise' else 0.5
+        htime = adj_coeff*deg / self.yawrate
         self.keys.send('YawRightButton', hold=htime)
 
     def refuel(self, scr_reg):
