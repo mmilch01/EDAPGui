@@ -1,0 +1,101 @@
+{
+    "GlobalShoppingList": {
+        "BuyCommodities": {
+            "Aluminium": 21336,
+            "Copper": 2579,
+            "Food cartridges": 507,
+            "Fruit and vegetables": 294,
+            "Insulating membrane": 1347,
+            "Liquid oxygen": 14840,
+            "Polymers": 2041,
+            "Steel": 2857,
+            "Titanium": 32406,
+            "Water": 6361
+        },
+        "UpdateCommodityCount": false,
+        "Skip": false,
+        "Completed": false
+    },
+    "1": {
+        "SystemName": "COL 285 SECTOR SN-Y B15-6",
+        "StationName": "SCHWEICKART TOWN",
+        "GalaxyBookmarkType": "Fav",
+        "GalaxyBookmarkNumber": 7,
+        "SystemBookmarkType": "Fav",
+        "SystemBookmarkNumber": -1,
+        "SellCommodities": {},
+        "BuyCommodities": {},
+        "UpdateCommodityCount": true,
+        "FleetCarrierTransfer": false,
+        "SCOTime": 0,
+        "Skip": true,
+        "Completed": false
+    },
+    "2": {
+        "SystemName": "COL 285 SECTOR OH-A B15-1",
+        "StationName": "OBNINSK STELLAR HHJ-34V",
+        "GalaxyBookmarkType": "Fav",
+        "GalaxyBookmarkNumber": 1,
+        "SystemBookmarkType": "Fav",
+        "SystemBookmarkNumber": 1,
+        "PositionInNavPanel": 1,
+        "BuyCommodities": {
+            "ALL": 0
+        },
+        "SellCommodities": {},
+        "FleetCarrierTransfer": false,
+        "UpdateCommodityCount": false,
+        "SCOTime": 0,
+        "Skip": false,
+        "Completed": false
+    },
+    "3": {
+        "SystemName": "BLETII",
+        "StationName": "TRAILBLAZER WISH",
+        "GalaxyBookmarkType": "Nav",
+        "GalaxyBookmarkNumber": -1,
+        "SystemBookmarkType": "Nav",
+        "SystemBookmarkNumber": -1,
+        "PositionInNavPanel": 3,
+        "SellCommodities": {},
+        "BuyCommodities": {},
+        "UpdateCommodityCount": true,
+        "FleetCarrierTransfer": false,
+        "SCOTime": 0,
+        "Skip": true,
+        "Completed": false
+    },
+    "4": {
+        "SystemName": "COL 285 SECTOR OH-A B15-1",
+        "StationName": "ORBITAL CONSTRUCTION SITE: ACKER TOWN",
+        "GalaxyBookmarkType": "Fav",
+        "GalaxyBookmarkNumber": 4,
+        "SystemBookmarkType": "Fav",
+        "SystemBookmarkNumber": 4,
+        "PositionInNavPanel": 3,
+        "SellCommodities": {
+            "ALL": 0
+        },
+        "BuyCommodities": {},
+        "FleetCarrierTransfer": false,
+        "UpdateCommodityCount": false,
+        "SCOTime": 0,
+        "Skip": false,
+        "Completed": false
+    },
+    "rep": {
+        "SystemName": "REPEAT",
+        "StationName": "",
+        "GalaxyBookmarkType": "",
+        "GalaxyBookmarkNumber": -1,
+        "SystemBookmarkType": "",
+        "SystemBookmarkNumber": -1,
+        "SellCommodities": {},
+        "BuyCommodities": {},
+        "FleetCarrierTransfer": false,
+        "UpdateCommodityCount": false,
+        "SCOTime": 0,
+        "Skip": false,
+        "Completed": false
+    }
+}

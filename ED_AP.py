@@ -1592,7 +1592,7 @@ class EDAutopilot:
     #   - perform fss (if enabled)
     def position(self, scr_reg, did_refuel=True):
         logger.debug('position')
-        add_time = 12
+        add_time = 3
 
         self.vce.say("Maneuvering")
 
@@ -1603,7 +1603,10 @@ class EDAutopilot:
         if self.config["EnableRandomness"] == True:
             pause_time = pause_time+random.randint(0, 3)
         # need time to get away from the Sun so heat will disipate before we use FSD
+        # SCO boost for a set time.
+        self.keys.click_key("Key_Tab")        
         sleep(pause_time)
+        self.keys.click_key("Key_Tab")
 
         if self.config["ElwScannerEnable"] == True:
             self.fss_detect_elw(scr_reg)
