@@ -86,9 +86,10 @@ def size_scale_for_station(width: int, height: int, w: int, h: int) -> (int, int
 
 
 class Screen_Regions:
-    def __init__(self, screen, templ):
+    def __init__(self, screen, templ,cb):
         self.screen = screen
         self.templates = templ
+        self.callback=cb
 
         # Define the thresholds for template matching to be consistent throughout the program
         self.compass_match_thresh = 0.35
@@ -271,9 +272,11 @@ class Screen_Regions:
     def sun_percent(self, screen):
         blackAndWhiteImage = self.capture_region_filtered(screen, 'sun')
  
+        
+
         wht = sum(blackAndWhiteImage == 255)     
         blk = sum(blackAndWhiteImage != 255)
 
         result = int((wht / (wht+blk))*100)
-
+        self.callback('log', f'sun_percent: {result}')
         return result

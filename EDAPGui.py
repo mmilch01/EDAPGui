@@ -454,7 +454,7 @@ class APGui():
         webbrowser.open_new("https://discord.gg/HCgkfSc")
 
     def open_logfile(self):
-        os.startfile('autopilot.log')
+        os.startfile('logs/autopilot.log')
 
     def log_msg(self, msg):
         message = datetime.now().strftime("%H:%M:%S: ") + msg

@@ -211,7 +211,7 @@ class EDAutopilot:
 
         self.ocr = OCR(self.scr, self.config['OCRLanguage'])
         self.templ = Image_Templates.Image_Templates(self.scr.scaleX, self.scr.scaleY, self.scr.scaleX)
-        self.scrReg = Screen_Regions.Screen_Regions(self.scr, self.templ)
+        self.scrReg = Screen_Regions.Screen_Regions(self.scr, self.templ,cb)
         self.jn = EDJournal(cb)
         self.keys = EDKeys(cb)
         self.keys.activate_window = self.config['ActivateEliteEachKey']
@@ -1251,10 +1251,12 @@ class EDAutopilot:
         #  endlessly. So we will have a fail_safe_timeout to kick us out of pitch up if we've pitch past 110 degrees, but
         #  we'll add 3 more second for pad in case the user has a higher pitch rate than the vehicle can do
         fail_safe_timeout = (120/self.pitchrate)+3
+        self.vce.say(f"fail safe timeout: {fail_safe_timeout}")
         starttime = time.time()
 
         # if sun in front of us, then keep pitching up until it is below us
         while self.is_sun_dead_ahead(scr_reg):
+            self.vce.say(f"sun is dead ahead, pitching up")
             self.keys.send('PitchUpButton', state=1)
 
             # check if we are being interdicted
@@ -1268,11 +1270,13 @@ class EDAutopilot:
                 logger.debug('sun avoid failsafe timeout')
                 print("sun avoid failsafe timeout")
                 break
-
+            
+        self.vce.say(f"sun is not dead ahead")
         sleep(0.35)                 # up slightly so not to overheat when scooping
         # Some ships heat up too much and need pitch up a little further
         if self.sunpitchuptime > 0.0:
             sleep(self.sunpitchuptime)
+        self.vce.say(f"pitching down")
         self.keys.send('PitchUpButton', state=0)
 
         # Some ships run cool so need to pitch down a little
