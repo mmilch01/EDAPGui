@@ -1,18 +1,9 @@
 {
     "GlobalShoppingList": {
         "BuyCommodities": {
-            "Aluminium": 21336,
-            "Copper": 2579,
-            "Food cartridges": 507,
-            "Fruit and vegetables": 294,
-            "Insulating membrane": 1347,
-            "Liquid oxygen": 14840,
-            "Polymers": 2041,
-            "Steel": 2857,
-            "Titanium": 32406,
-            "Water": 6361
+            "Titanium": 1392
         },
-        "UpdateCommodityCount": false,
+        "UpdateCommodityCount": true,
         "Skip": false,
         "Completed": false
     },
@@ -20,7 +11,7 @@
         "SystemName": "COL 285 SECTOR SN-Y B15-6",
         "StationName": "SCHWEICKART TOWN",
         "GalaxyBookmarkType": "Fav",
-        "GalaxyBookmarkNumber": 7,
+        "GalaxyBookmarkNumber": 9,
         "SystemBookmarkType": "Fav",
         "SystemBookmarkNumber": -1,
         "SellCommodities": {},
@@ -28,7 +19,7 @@
         "UpdateCommodityCount": true,
         "FleetCarrierTransfer": false,
         "SCOTime": 0,
-        "Skip": true,
+        "Skip": false,
         "Completed": false
     },
     "2": {
@@ -46,7 +37,7 @@
         "FleetCarrierTransfer": false,
         "UpdateCommodityCount": false,
         "SCOTime": 0,
-        "Skip": false,
+        "Skip": true,
         "Completed": false
     },
     "3": {
@@ -65,13 +56,29 @@
         "Skip": true,
         "Completed": false
     },
-    "4": {
+    "3.5": {
         "SystemName": "COL 285 SECTOR OH-A B15-1",
-        "StationName": "ORBITAL CONSTRUCTION SITE: ACKER TOWN",
+        "StationName": "NEW OBNINSK",
         "GalaxyBookmarkType": "Fav",
         "GalaxyBookmarkNumber": 4,
         "SystemBookmarkType": "Fav",
         "SystemBookmarkNumber": 4,
+        "PositionInNavPanel": 3,
+        "SellCommodities": {},
+        "BuyCommodities": {},
+        "FleetCarrierTransfer": false,
+        "UpdateCommodityCount": false,
+        "SCOTime": 0,
+        "Skip": true,
+        "Completed": false
+    },
+    "4": {
+        "SystemName": "COL 285 SECTOR OH-A B15-1",
+        "StationName": "ORBITAL CONSTRUCTION SITE:  BRUNEL PLATFORM",
+        "GalaxyBookmarkType": "Fav",
+        "GalaxyBookmarkNumber": 6,
+        "SystemBookmarkType": "Fav",
+        "SystemBookmarkNumber": -1,
         "PositionInNavPanel": 3,
         "SellCommodities": {
             "ALL": 0
@@ -79,7 +86,7 @@
         "BuyCommodities": {},
         "FleetCarrierTransfer": false,
         "UpdateCommodityCount": false,
-        "SCOTime": 0,
+        "SCOTime": 6,
         "Skip": false,
         "Completed": false
     },
