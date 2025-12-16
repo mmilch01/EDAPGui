@@ -1,78 +1,45 @@
 {
     "GlobalShoppingList": {
         "BuyCommodities": {
-            "Steel": 2076,
-            "Titanium": 3922,
-            "Water": 652
+            "Steel": 14076,
+            "Titanium": 8205
         },
         "UpdateCommodityCount": true,
         "Skip": false,
         "Completed": false
     },
     "1": {
-        "SystemName": "COL 285 SECTOR SN-Y B15-6",
-        "StationName": "SCHWEICKART TOWN",
+        "SystemName": "COL 285 SECTOR AC-H B25-7",
+        "StationName": "COLONIAL RAIDERS INC HQ",
         "GalaxyBookmarkType": "Fav",
-        "GalaxyBookmarkNumber": 7,
+        "GalaxyBookmarkNumber": 3,
         "SystemBookmarkType": "Fav",
-        "SystemBookmarkNumber": -1,
-        "SellCommodities": {},
-        "BuyCommodities": {},
-        "UpdateCommodityCount": true,
-        "FleetCarrierTransfer": false,
-        "SCOTime": 0,
-        "Skip": true,
-        "Completed": false
-    },
-    "2": {
-        "SystemName": "COL 285 SECTOR OH-A B15-1",
-        "StationName": "OBNINSK STELLAR HHJ-34V",
-        "GalaxyBookmarkType": "Fav",
-        "GalaxyBookmarkNumber": 1,
-        "SystemBookmarkType": "Fav",
-        "SystemBookmarkNumber": 1,
-        "PositionInNavPanel": 1,
+        "SystemBookmarkNumber": 3,
+        "PositionInNavPanel": -1,
         "BuyCommodities": {
             "ALL": 0
         },
         "SellCommodities": {},
         "FleetCarrierTransfer": false,
-        "UpdateCommodityCount": false,
+        "UpdateCommodityCount": true,
         "SCOTime": 0,
-        "Skip": true,
-        "Completed": false
-    },
-    "3.5": {
-        "SystemName": "COL 285 SECTOR OH-A B15-1",
-        "StationName": "WISDOM PROSPECT",
-        "GalaxyBookmarkType": "Fav",
-        "GalaxyBookmarkNumber": 6,
-        "SystemBookmarkType": "Fav",
-        "SystemBookmarkNumber": -1,
-        "PositionInNavPanel": 3,
-        "SellCommodities": {},
-        "BuyCommodities": {},
-        "FleetCarrierTransfer": false,
-        "UpdateCommodityCount": false,
-        "SCOTime": 8,
         "Skip": false,
         "Completed": false
     },
-    "4": {
-        "SystemName": "COL 285 SECTOR OH-A B15-1",
-        "StationName": "ORBITAL CONSTRUCTION SITE: BRUNEL PLATFORM",
+    "2": {
+        "SystemName": "COL 285 SECTOR BR-C C13-21",
+        "StationName": "ORBITAL CONSTRUCTION SITE: HENSON'S FOLLY",
         "GalaxyBookmarkType": "Fav",
-        "GalaxyBookmarkNumber": 4,
+        "GalaxyBookmarkNumber": 7,
         "SystemBookmarkType": "Fav",
-        "SystemBookmarkNumber": 4,
-        "PositionInNavPanel": 3,
+        "SystemBookmarkNumber": -1,
         "SellCommodities": {
             "ALL": 0
         },
         "BuyCommodities": {},
+        "UpdateCommodityCount": true,
         "FleetCarrierTransfer": false,
-        "UpdateCommodityCount": false,
-        "SCOTime": 8,
+        "SCOTime": 0,
         "Skip": false,
         "Completed": false
     },

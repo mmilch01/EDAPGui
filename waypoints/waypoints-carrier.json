@@ -56,7 +56,7 @@
         "UpdateCommodityCount": false,
         "SCOTime": 8,
         "Skip": false,
-        "Completed": false
+        "Completed": true
     },
     "4": {
         "SystemName": "COL 285 SECTOR OH-A B15-1",
