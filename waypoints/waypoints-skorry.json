@@ -1,10 +1,10 @@
 {
     "GlobalShoppingList": {
         "BuyCommodities": {
-            "Polymers": 0,
-            "Steel": 0,
-            "Titanium": 4276,
-            "Liquid oxygen": 1553
+            "Aluminium": 6260,
+            "Copper": 644,
+            "Liquid oxygen": 3781,
+            "Polymers": 893
         },
         "UpdateCommodityCount": true,
         "Skip": false,
@@ -30,11 +30,11 @@
     },
     "2": {
         "SystemName": "COL 285 SECTOR BR-C C13-21",
-        "StationName": "ORBITAL CONSTRUCTION SITE: SEREBROV TERMINAL",
+        "StationName": "ORBITAL CONSTRUCTION SITE: HENSON'S FOLLY",
         "GalaxyBookmarkType": "Fav",
-        "GalaxyBookmarkNumber": 5,
+        "GalaxyBookmarkNumber": 6,
         "SystemBookmarkType": "Fav",
-        "SystemBookmarkNumber": 5,
+        "SystemBookmarkNumber": -1,
         "SellCommodities": {
             "ALL": 0
         },
