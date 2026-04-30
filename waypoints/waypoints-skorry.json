@@ -1,9 +1,9 @@
 {
     "GlobalShoppingList": {
         "BuyCommodities": {
-            "Aluminium": 6260,
-            "Copper": 644,
-            "Liquid oxygen": 3781,
+            "Aluminium": 0,
+            "Copper": 0,
+            "Liquid oxygen": 3159,
             "Polymers": 893
         },
         "UpdateCommodityCount": true,
@@ -26,11 +26,11 @@
         "UpdateCommodityCount": true,
         "SCOTime": 0,
         "Skip": false,
-        "Completed": false
+        "Completed": true
     },
     "2": {
         "SystemName": "COL 285 SECTOR BR-C C13-21",
-        "StationName": "ORBITAL CONSTRUCTION SITE: HENSON'S FOLLY",
+        "StationName": "ORBITAL CONSTRUCTION SITE: TITOV TERMINAL",
         "GalaxyBookmarkType": "Fav",
         "GalaxyBookmarkNumber": 6,
         "SystemBookmarkType": "Fav",
