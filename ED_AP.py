@@ -1447,7 +1447,7 @@ class EDAutopilot:
             'found': Target found
             'disengage': Disengage text found
         """
-
+        slowdown_sent = False
         close = 6
         off = None
 
@@ -1512,10 +1512,18 @@ class EDAutopilot:
 
             new = self.get_destination_offset(scr_reg)
             if new:
-                off = new
+                old_distance = max(abs(off['x']), abs(off['y']))
+                new_distance = max(abs(new['x']), abs(new['y']))
 
+                # Target is rapidly moving away from screen center.
+                if not slowdown_sent and new_distance > 25 and new_distance - old_distance > 15:
+                    self.keys.send('SetSpeed50')
+                    slowdown_sent = True
+
+                off = new
             # Check if target is outside the target region (behind us) and break loop
             if new is None:
+                self.keys.send('SetSpeed25')
                 logger.debug("sc_target_align lost target")
                 self.ap_ckb('log', 'Target lost, attempting re-alignment.')
                 return ScTargetAlignReturn.Lost
