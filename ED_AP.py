@@ -1523,8 +1523,8 @@ class EDAutopilot:
                 off = new
             # Check if target is outside the target region (behind us) and break loop
             if new is None:
-                self.keys.send('SetSpeed0')
-                logger.debug("sc_target_align lost target, setting speed to 0")
+                self.keys.send('SetSpeedZero')
+                logger.debug("sc_target_align lost target, setting speed to 50")
                 self.ap_ckb('log', 'Target lost, attempting re-alignment.')
                 return ScTargetAlignReturn.Lost
 
